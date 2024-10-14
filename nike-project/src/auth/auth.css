@@ -1,0 +1,179 @@
+/* reset */
+body,
+p {
+  margin: unset;
+  padding: unset;
+}
+
+a {
+  color: unset;
+}
+
+h1,
+h2,
+h3 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+button,
+input {
+  all: unset;
+  display: inline-block;
+}
+
+/* Variable */
+:root {
+}
+
+/* Typography */
+:root {
+  font-family: 'Pretendard';
+  font-size: 62.5%;
+}
+
+/* Layouts */
+.l_wrapper {
+  max-width: 512px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+/* Commons */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-logo {
+  width: 76px;
+  height: 60px;
+  aspect-ratio: 76 / 60;
+  margin: 20px 0;
+}
+
+.auth-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.auth-title {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+}
+
+.auth-input {
+  height: 56px;
+  padding: 16px 12px 16px 12px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: #707072;
+  border-radius: 8px;
+  border: 1px solid #707072;
+}
+
+.auth-validation {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  color: #707072;
+  line-height: 1.8;
+}
+
+.btn {
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+#check {
+  display: none;
+}
+
+label {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+#check + label {
+  background-repeat: no-repeat;
+  background-image: url(../../public/images/auth/check.svg);
+}
+
+#check:checked + label {
+  background-repeat: no-repeat;
+  background-image: url(../../public/images/auth/checked.svg);
+}
+
+/* Components */
+
+/* Login form */
+#login-input[type='email'] {
+  width: 100%;
+  margin: 57px 0;
+}
+
+.login-agreement {
+  font-size: 1.6rem;
+  line-height: 2.4;
+  color: #757575;
+}
+
+.login-btn {
+  width: 90px;
+  height: 52px;
+  font-size: 1.6rem;
+  line-height: 2.8;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 76px;
+}
+
+/* SignUp form */
+.signUp-title {
+  margin-bottom: 57px;
+}
+
+.signup {
+  max-width: 502px;
+  display: flex;
+  flex-direction: column;
+}
+.name-container {
+  display: flex;
+  gap: 12px;
+}
+
+#input-firstName[type='text'],
+#input-lastName[type='text'] {
+  width: 100%;
+}
+
+#input-passWord[type='password'],
+#input-birth[type='text'] {
+  width: 100%;
+  margin: 20px 0 16px 0;
+}
+
+.signup-agreement {
+  margin-top: 22px;
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.signup-btn {
+  width: 100%;
+  height: 46px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  border-radius: 30px;
+  margin-top: 70px;
+}

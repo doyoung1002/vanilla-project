@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+  <div class="l_wrapper">
+    <div id="signup-form" class="auth-form">
+      <header class="auth-header sign-header">
+        <div class="auth-logo">
+          <img src="../../public/images/auth/nike.svg" />
+        </div>
+        <h1 class="auth-title signUp-title">이제 나이키 멤버가 되어볼까요?</h1>
+      </header>
+      <section class="input-form">
+        <div class="name-container">
+          <input class="auth-input" id="input-firstName" type="text" placeholder="이름" />
+          <input class="auth-input" id="input-lastName" type="text" placeholder="성" />
+        </div>
+        <input class="auth-input" id="input-passWord" placeholder="비밀번호" type="password" />
+        <p class="auth-validation first">X 최소 8자</p>
+        <p class="auth-validation second ">X 알파벳 대문자 및 소문자 조합, 최소 1개 이상의 숫자</p>
+        <input class="auth-input" id="input-birth" placeholder="생년원일" type="text" />
+        <p class="signup-agreement"><input type="checkbox" id="check" aria-label="약관에 동의" /><label for="check"></label>
+          <a target="_blank"
+            href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&country=KR&language=ko&requestType=redirect&uxId=4fd2d5e7db76e0f85a6bb56721bd51df"
+            rel="noopener noreferrer">개인정보 처리방침</a> 및 <a target="_blank"
+            href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&country=KR&language=ko&requestType=redirect&uxId=4fd2d5e7db76e0f85a6bb56721bd51df"
+            rel="noopener noreferrer">이용약관</a>
+        </p>
+
+        <footer class="footer"><button type="submit" class="btn signup-btn">계정 만들기</button></footer>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="authService.js"></script>
+
+</body>
+
+</html>
